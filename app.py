@@ -26,7 +26,7 @@ def submit():
     urlarr=urls.split("\n")
     k=len(urlarr)
     print(k)
-    return html.replace('<out/>',f'https://shorturl-vs7j.onrender.com{k-1}')
+    return html.replace('<out/>',f'https://shorturl-vs7j.onrender.com{/k-1}')
 
 @app.route('/<string:inp>')
 def do(inp):
