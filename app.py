@@ -26,7 +26,7 @@ def submit():
     urlarr=urls.split("\n")
     k=len(urlarr)
     print(k)
-    return html.replace('<out/>',f'http://192.168.1.105:5000/{k-1}')
+    return html.replace('<out/>',f'https://shorturl-vs7j.onrender.com{k-1}')
 
 @app.route('/<string:inp>')
 def do(inp):
